@@ -1,0 +1,25 @@
+@media (min-width: 320px) {
+  .pnotify {
+    top: 70px !important;
+  }
+  .pnotify-container {
+    width: 280px !important;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .pnotify-container {
+    width: 320px !important;
+  }
+  .brighttheme-text {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .pnotify-container {
+    width: 380px !important;
+  }
+  .brighttheme-text {
+    font-size: 20px !important;
+  }
+}

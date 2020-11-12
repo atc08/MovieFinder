@@ -1,0 +1,7 @@
+{{#each this}}
+<li class="popular-movie-list__item">
+  <img class="popular-movie-list__item-img" src="https://image.tmdb.org/t/p/w780{{backdrop_path}}"
+    alt="{{original_title}}" data-id="{{id}}" data-date="{{release_date}}" data-vote="{{vote_average}}">
+  <p class="popular-movie-list__item-text">{{original_title}} ({{release_date}})</p>
+</li>
+{{/each}}

@@ -1,0 +1,124 @@
+.film-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.film-poster {
+  width: 274px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.first {
+  width: 100px;
+}
+.second {
+  width: 200px;
+}
+.film-title {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: $main-text;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.film-table {
+  margin-bottom: 30px;
+}
+.film-data {
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 1.2;
+  opacity: 0.6;
+  width: 500px;
+
+  &:nth-child(odd) {
+    background-color: $accent-color;
+  }
+}
+.film-description {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: rgba(55, 44, 72, 0.541);
+  line-height: 1.286;
+  text-align: left;
+  margin-bottom: 40px;
+
+  &-heading {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: $main-text;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
+.button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #372C48;
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+
+  &:hover {
+    outline: solid 1px $accent-color;
+    cursor: pointer;
+  }
+}
+button > span {
+  margin-right: 5px;
+}
+.addToWatchedBtn::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/video-watched.png);
+  margin-right: 8px;
+}
+.addToQueueBtn::before {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/calendar-queue.png);
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .film-card {
+    flex-direction: row;
+  }
+  .film-poster {
+    width: 358px;
+    height: 528px;
+    margin-right: 20px;
+  }
+  .first {
+    width: 120px;
+  }
+  .second {
+    width: 270px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .film-poster {
+    width: 428px;
+    height: 632px;
+  }
+  .first {
+    width: 160px;
+  }
+  .second {
+    width: 1200px;
+  }
+}

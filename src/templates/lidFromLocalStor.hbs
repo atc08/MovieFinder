@@ -1,0 +1,21 @@
+<ul class="lib_btn-list ">
+  <li class="lib_watched-item"><a class="lib_watched-link" href="#">Watched</a></li>
+  <li class="lib_queue-item"><a class="lib_queue-link" href="#">Queue</a></li>
+</ul>
+<div class="lib-wrap">
+  <ul class="lib-list movie-list">
+    {{#each this}}
+    <li class="lib-list__item movie-list">
+      <img class="lib-listitem-img home-movie-list__item-img" src="{{imgPath}}" alt="{{title}}" data-id="{{id}}" data-date="{{year}}"
+        data-vote="{{vote}}">
+      <p class=" home-movie-list__item-text lib-listitem-text">{{title}} ({{year}})</p>
+      <p class="lib-list__item-rating">{{vote}}</p>
+      {{!-- <img class="lib-list__item-img" src="https://image.tmdb.org/t/p/w780{{backdrop_path}}" alt="{{original_title}}"
+        data-id="{{id}}" data-date="{{release_date}}" data-vote="{{vote_average}}">
+      <p class="lib-list__item-text">{{original_title}} ({{release_date}})</p>
+      <p class="lib-list__item-rating">{{vote_average}}</p>
+      <p>id = {{id}}</p> --}}
+    </li>
+    {{/each}}
+  </ul>
+</div>

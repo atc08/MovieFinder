@@ -1,0 +1,37 @@
+<article class="film-card">
+    <img class="film-poster" src="https://image.tmdb.org/t/p/original/{{poster_path}}" alt="{{title}}" data-id="{{id}}"
+        data-date="{{release_date}}" data-vote="{{vote_average}}">
+    <div class="data-wrapper">
+        <h2 class="film-title">{{title}} ({{release_date}})</h2>
+        <table class="film-table">
+            <tr class="film-data">
+                <td class="first">vote / votes </td>
+                <td class="second">{{ vote_average}} / {{vote_count}}</td>
+            </tr>
+            <tr class="film-data">
+                <td>popularity </td>
+                <td>{{ popularity}}</td>
+            </tr>
+            <tr class="film-data">
+                <td>original title </td>
+                <td>{{ title}}</td>
+            </tr>
+            <tr class="film-data">
+                <td>genre </td>
+                <td>
+                    {{#each genres}}
+                    {{ name }}
+                    {{/each}}
+                </td>
+            </tr>
+        </table>
+        <h3 class="film-description-heading">About</h3>
+        <p class="film-description">{{overview}}</p>
+        <button class="button addToWatchedBtn" type="button">
+            Add to watched
+        </button>
+        <button class="button addToQueueBtn" type="button">
+            Add to queue
+        </button>
+    </div>
+</article>

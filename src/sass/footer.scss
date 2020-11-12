@@ -1,0 +1,38 @@
+.footer-container {
+  min-width: 100%;
+  height: 88px;
+  background-color: rgb(119, 193, 187);
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+  padding-top: 36px;
+  font-size: 16px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+  background-color: rgb(119, 193, 187);
+  box-shadow: 2px rgb(128, 128, 128);
+  background-image: url(../images/upButton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 2px rgb(0, 0, 0);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
