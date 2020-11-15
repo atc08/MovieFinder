@@ -1,13 +1,10 @@
-
-  <ul class="lib-list movie-list">
-    {{#each this}}
-    <li class="lib-list__item movie-list">
-      <img class="lib-listitem-img home-movie-list__item-img" src="{{imgPath}}" alt="{{title}}" data-id="{{id}}"
-        data-date="{{year}}" data-vote="{{vote}}">
-      <p class=" home-movie-list__item-text lib-listitem-text">{{title}} ({{year}})</p>
-      <p class="lib-list__item-rating">{{vote}}</p>
-      {{!-- <p>id = {{id}}</p> --}}
-    </li>
-    {{/each}}
-  </ul>
-{{!-- </div> --}}
+<ul class="lib-list movie-list">
+  {{#each this}}
+  <li class="lib-list__item movie-list">
+    <img class="lib-listitem-img home-movie-list__item-img" src="{{imgPath}}" alt="{{title}}" data-id="{{id}}"
+      data-date="{{year}}" data-vote="{{vote}}">
+    <p class=" home-movie-list__item-text lib-listitem-text">{{title}} ({{year}})</p>
+    <p class="lib-list__item-rating">{{vote}}</p>
+  </li>
+  {{/each}}
+</ul>

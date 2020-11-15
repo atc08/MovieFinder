@@ -7,9 +7,7 @@ import searchAndPaginationHomePage from './js/searchAndPaginationHomePage';
 import navigationPages from './js/navigation';
 import activeDetailsPage from './js/filmDetailsPage';
 import openLib from './js/libraryPage';
-import openQueue from './js/libraryPage';
 import { myInfo } from './js/notification';
-// openQueue()
 fetchPopularPage();
 checkLS();
 
@@ -51,7 +49,3 @@ refs.lib.addEventListener('click', openLib);
 refs.searchForm.addEventListener('submit', fetchHomePage);
 refs.homePage.addEventListener('click', activeDetailsPage);
 refs.upButton.addEventListener('click', upButtonHandler);
-
-
-// console.log('в индекс вне ф-ии:',movieId);
-// console.log(refs.libWatchedBtn);

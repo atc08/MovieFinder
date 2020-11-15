@@ -10,13 +10,17 @@
     margin-bottom: 10px;
     position: relative;
     border-radius: 8px;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px 3px $accent-color;
+    }
 
     &-img {
       width: 300px;
       height: 158px;
       border-radius: 8px;
       cursor: pointer;
-      background-color: lightblue;
+      background-color: rgb(173, 216, 230);
     }
 
     &-text {
@@ -29,10 +33,6 @@
       color: aliceblue;
     }
   }
-}
-[data-pnotify].pnotify.stack-bar-top {
-  width: 200px;
-  border-radius: 0;
 }
 
 .btn-container {

@@ -1,5 +1,4 @@
-const refs = {
-  
+const refs = { 
   addToWatchedBtn: document.querySelector('.addToWatchedBtn'),
   addToWatchedIcon: document.querySelector('.addToWatchedIcon'),
   addToQueueBtn: document.querySelector('.addToQueueBtn'),
@@ -29,4 +28,5 @@ const refs = {
   libListwWrap: document.querySelector('.lib-wrap'),
   libBtnList: document.querySelector('.lib_btn-list'),
 }
+
 export default refs;

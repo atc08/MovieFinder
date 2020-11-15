@@ -5,16 +5,11 @@
 @import 'mixins.scss';
 @import 'pnotify.scss';
 
-// reset margin from normalize
 h1 {
   margin-top: 0;
 }
 body {
   position: relative;
-  // font-family: 'Roboto', sans-serif;
-  // @include font(20/11, 1.1rem, 400);
-  // color: $main-text;
-  // background-color: #fff;
 }
 
 @import 'header.scss';
